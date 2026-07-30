@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: #0A0A0B;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+body {
+  background: #0A0A0B;
+  color: #EEEAE2;
+  font-family: 'General Sans', system-ui, sans-serif;
+  overscroll-behavior-y: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #D9C36A;
+  color: #0A0A0B;
+}
+
+/* Faint checkerboard grain — a nod to the chess-engine work at the core of the projects section */
+.board-grain {
+  background-image:
+    repeating-conic-gradient(#EEEAE2 0% 25%, transparent 0% 50%);
+  background-size: 44px 44px;
+  opacity: 0.035;
+}
+
+.board-grain-light {
+  background-image:
+    repeating-conic-gradient(#0A0A0B 0% 25%, transparent 0% 50%);
+  background-size: 28px 28px;
+  opacity: 0.05;
+}
+
+/* thin hairline used sparingly for structure, not decoration */
+.hairline {
+  border-color: rgba(238, 234, 226, 0.12);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
