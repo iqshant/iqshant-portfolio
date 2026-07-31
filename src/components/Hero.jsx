@@ -6,7 +6,7 @@ const CONTACTS = [
   { label: 'Email', value: 'iqshantbawa@gmail.com', href: 'mailto:iqshantbawa@gmail.com', Icon: Mail },
   { label: 'Phone', value: '+91 70098 35585', href: 'tel:+917009835585', Icon: Phone },
   { label: 'GitHub', value: 'github.com/iqshant', href: 'https://github.com/iqshant', Icon: Github },
-  { label: 'LinkedIn', value: 'linkedin.com/iqshant', href: 'https://linkedin.com/in/iqshant', Icon: Linkedin },
+  { label: 'LinkedIn', value: 'linkedin.com/iqshantbawa', href: 'https://linkedin.com/in/iqshantbawa', Icon: Linkedin },
 ]
 
 export default function Hero() {

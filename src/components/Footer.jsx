@@ -38,7 +38,7 @@ export default function Footer() {
               <Github size={18} /> GitHub
             </a>
             <a
-              href="https://linkedin.com/in/iqshant"
+              href="https://linkedin.com/in/iqshantbawa"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 text-chalk hover:text-square transition-colors"
